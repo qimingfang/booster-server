@@ -1,0 +1,44 @@
+{
+  "name": "booster-server",
+  "version": "0.3.2",
+  "description": "Server for booster RN",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/main.js",
+    "watch": "nodemon ./src/main.js",
+    "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive tests"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.3.15",
+    "babel-plugin-syntax-async-functions": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-regenerator": "^6.4.4",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "body-parser": "^1.14.2",
+    "es6-promise": "^3.0.2",
+    "eslint": "^1.10.3",
+    "eslint-plugin-babel": "^3.0.0",
+    "eslint-plugin-react": "^3.11.3",
+    "express": "^4.13.3",
+    "express-session": "^1.13.0",
+    "jsonfile": "^2.3.0",
+    "mongoose": "^4.3.6",
+    "node-uuid": "^1.4.7",
+    "pkgcloud": "^1.2.0-alpha.0",
+    "supertest": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-register": "^6.4.3",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "rewire": "^2.5.1",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  }
+}
