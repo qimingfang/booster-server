@@ -89,7 +89,7 @@ app.put('/vehicles', (req, res) => {
  */
 app.post('/vehicles', (req, res) => {
   const query = req.body.query
-  if (!query) {
+  if (query === undefined) {
     return res.status(403).send({ error: 'Expected \'query\' to be in the params' })
   }
 
